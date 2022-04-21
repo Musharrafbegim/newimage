@@ -14002,7 +14002,7 @@ function parallaxAnimation() {
 	setPin("#element-4").
 	addTo(controller);
 	
-	var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-5", offset: -(0, _jquery2.default)('#element-4').height() + 20, duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-5').offset().top + (0, _jquery2.default)('.contact-form').height() - (0, _jquery2.default)(window).width() * (192 / 1920) - 10 }).
+	var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-5", offset: -(0, _jquery2.default)('#element-4').height() + 20, duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-5').offset().top + (0, _jquery2.default)('.contact-form').height() - (0, _jquery2.default)(window).width() * (192 / 1920) - 5 }).
 	setPin("#element-5").
 	addTo(controller);
 
