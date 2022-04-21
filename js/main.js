@@ -13976,7 +13976,7 @@ function parallaxAnimation() {
 	addTo(controller);
   
 	if(window.innerWidth >= 1600){
-		var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-3", duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-3').offset().top + 15 }).
+		var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-3", duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-3').offset().top + 10 }).
 		setPin("#element-3").
 		addTo(controller);
 	} else if(window.innerWidth >= 1330){
