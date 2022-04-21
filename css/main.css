@@ -4606,7 +4606,7 @@ div.footers {
   
   .element-4__wrap {
     width: 100%;
-    padding-right: calc(5.1vw - 25px);
+    padding-right: calc(5.1vw - 5px);
     text-align: right;
     display: flex;
     justify-content: flex-end;
