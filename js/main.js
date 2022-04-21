@@ -13975,7 +13975,7 @@ function parallaxAnimation() {
 	setVelocity("#element-2", { opacity: 0 }, { duration: 0 }).
 	addTo(controller);
   
-	if(window.innerWidth >= 1600){
+	if(window.innerWidth >= 1600 || 1800){
 		var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-3", duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-3').offset().top + 10 }).
 		setPin("#element-3").
 		addTo(controller);
@@ -13987,7 +13987,16 @@ function parallaxAnimation() {
 		var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-3", duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-3').offset().top + 8 }).
 	setPin("#element-3").
 	addTo(controller);
+	} else if(window.innerWidth >= 1430){
+		var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-3", duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-3').offset().top + 20 }).
+	setPin("#element-3").
+	addTo(controller); 
+	} else if(window.innerWidth >= 1530){
+		var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-3", duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-3').offset().top + 20 }).
+	setPin("#element-3").
+	addTo(controller); 
 	}
+	
   
 	var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-4", offset: 15, duration: (0, _jquery2.default)('.contact-form').offset().top - (0, _jquery2.default)('#element-4').offset().top + (0, _jquery2.default)(window).width() * (330 / 1920) }).
 	setPin("#element-4").
