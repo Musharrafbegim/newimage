@@ -13997,7 +13997,9 @@ function parallaxAnimation() {
 	setPin("#element-5").
 	addTo(controller);
 
-	
+	var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-4" }).
+	setVelocity( "#element-5", { opacity: 0 }, { duration: 0 }).
+	addTo(controller);
 	var scene = new ScrollMagic.Scene({ triggerElement: "#trigger-6" }).
 	setVelocity( "#element-5", { opacity: 0 }, { duration: 0 }).
 	addTo(controller);
