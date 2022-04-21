@@ -4592,7 +4592,6 @@ div.footers {
     width: 30.06vw;
     margin: 0 !important;
   }
-  
   .element-2__wrap,
   .element-3__wrap,
   .element-4__wrap,
@@ -4605,7 +4604,7 @@ div.footers {
   }
   
   .element-4__wrap {
-    width: 100%;
+    width: 90%;
     padding-right: calc(6.7681vw - 50px);
     text-align: right;
     display: flex;
