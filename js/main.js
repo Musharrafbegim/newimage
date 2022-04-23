@@ -13778,10 +13778,31 @@ var _scrollmagic = __webpack_require__(1);var ScrollMagic = _interopRequireWildc
   });
 
   $slickElement.slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
     autoplay: false,
     arrows: true,
-    infinite: false });
+    infinite: false,
+	asNavFor: ".cover__desc" });
 
+var $slickElementCD = (0, _jquery2.default)('.cover__desc');
+$slickElementCD.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    (0, _jquery2.default)('.cover-slider__pagination--current').text(i);
+    (0, _jquery2.default)('.cover-slider__pagination--total').text(slick.slideCount);
+  });
+
+  $slickElementCD.slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoPlay: false,
+	arrows: false, 
+	infinite: false,
+	variableWidth: true,
+	draggable: false,
+	fade: false,
+	asNavFor: ".cover-slider"
+  });
 
   var $clientsSlider = (0, _jquery2.default)('.clients__inner');
   var $clientsSliderPaging = (0, _jquery2.default)('.clients__pagination');
@@ -13853,6 +13874,30 @@ var $clientsSliderAbout = (0, _jquery2.default)('.clients__innerBig');
 		},
 	  ], });
 		//About Client Slider End
+
+
+		//Slider for text in clients
+		
+		var $clientInnerc = (0, _jquery2.default)('');
+		$clientInnerc.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+		  var i = (currentSlide ? currentSlide : 0) + 1;
+		  (0, _jquery2.default)('.cover-slider__pagination--current').text(i);
+		  (0, _jquery2.default)('.cover-slider__pagination--total').text(slick.slideCount);
+		});
+	  
+		$clientInnerc.slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoPlay: false,
+		  arrows: false, 
+		  infinite: false,
+		  variableWidth: true,
+		  draggable: false,
+		  fade: false,
+		  //asNavFor: ".clients__inner"
+		});
+
+		//slider for text in clients end
 
   (0, _jquery2.default)('.hamburger').click(function () {
     (0, _jquery2.default)(this).toggleClass('open');
